@@ -17,4 +17,8 @@ public class WirelessMice extends Mice{
     public void setBatteryType(String batteryType) {
         this.batteryType = batteryType;
     }
+
+    public WirelessMice(String name, int cost, String interfaceType, String manufacturer) {
+        super(name, cost, interfaceType, manufacturer);
+    }
 }

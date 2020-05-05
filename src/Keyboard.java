@@ -17,4 +17,15 @@ public abstract class Keyboard extends ComputerPeriphery {
     public void setNumberOfKeys(int numberOfKeys) {
         this.numberOfKeys = numberOfKeys;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    public Keyboard(String name, int cost, String interfaceType, String manufacturer, int numberOfKeys, String switchType) {
+        super(name, cost, interfaceType, manufacturer);
+        this.numberOfKeys = numberOfKeys;
+        this.switchType = switchType;
+    }
 }

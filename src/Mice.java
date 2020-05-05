@@ -26,4 +26,13 @@ public abstract class Mice extends ComputerPeriphery {
     public void setSensor(String sensor) {
         this.sensor = sensor;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    public Mice(String name, int cost, String interfaceType, String manufacturer) {
+        super(name, cost, interfaceType, manufacturer);
+    }
 }

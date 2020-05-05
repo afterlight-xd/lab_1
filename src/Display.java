@@ -36,4 +36,18 @@ public class Display extends ComputerPeriphery {
     public void setRatio(String ratio) {
         this.ratio = ratio;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    public Display(String name, int cost, String interfaceType, String manufacturer, String ratio, int diagonal, int frequency, String resolution, String matrixType) {
+        super(name, cost, interfaceType, manufacturer);
+        this.ratio = ratio;
+        this.diagonal = diagonal;
+        this.frequency = frequency;
+        this.resolution = resolution;
+        this.matrixType = matrixType;
+    }
 }

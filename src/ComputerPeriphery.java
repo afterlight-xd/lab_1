@@ -4,6 +4,23 @@ public abstract class  ComputerPeriphery {
     private String interfaceType;
     private String manufacturer;
 
+    @Override
+    public String toString() {
+        return "ComputerPeriphery{" +
+                "name='" + name + '\'' +
+                ", cost=" + cost +
+                ", interfaceType='" + interfaceType + '\'' +
+                ", manufacturer='" + manufacturer + '\'' +
+                '}';
+    }
+
+    public ComputerPeriphery(String name, int cost, String interfaceType, String manufacturer) {
+        this.name = name;
+        this.cost = cost;
+        this.interfaceType = interfaceType;
+        this.manufacturer = manufacturer;
+    }
+
     public String getManufacturer() {
         return manufacturer;
     }
