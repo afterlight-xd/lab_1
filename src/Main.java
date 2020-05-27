@@ -1,9 +1,21 @@
-public class Main {
-    public static void main(String[] args) {
-        GamingWirelessMice g305 = new GamingWirelessMice("G305", 3099, "USB 3.0", "Logitech",false,"none");
-        Display xl2411p = new Display("XL2411P", 15000, "Display Port", "BenQ", "16:9", 24,144,"1920x1080","IPS");
+import java.util.concurrent.Semaphore;
 
-        System.out.println(g305.toString());
-        System.out.println(xl2411p.toString());
+public class Main {
+
+    public static int x = 5;
+
+    public static void main(String[] args) {
+        Computer myPC = new PortablePC();
+        myPC=new ComputerKeyboard(myPC);
+        myPC=new ComputerMouse(myPC);
+
+        System.out.println(myPC.getName() + " which costs " + myPC.getCost()+" rubles");
+        Semaphore sem = new Semaphore(1,true);
+
+        IncrementThread th1 = new IncrementThread(sem);
+        DecrementThread th2 = new DecrementThread(sem);
+
+        th1.start();
+        th2.start();
     }
 }
