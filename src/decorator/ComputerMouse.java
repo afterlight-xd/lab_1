@@ -1,3 +1,7 @@
+package decorator;
+
+import hierarchy.Computer;
+
 public class ComputerMouse extends CondimentDecorator {
     Computer computer;
 

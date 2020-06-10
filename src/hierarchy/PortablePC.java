@@ -1,8 +1,11 @@
-public class PortablePC extends PersonalComputer {
-    double batteryCapacity;
+package hierarchy;
+import factory.*;
 
-    public PortablePC() {
-        super();
+public class PortablePC extends PersonalComputer {
+    private double batteryCapacity;
+
+    public PortablePC(PCfactory factory) {
+        super(factory);
     }
 
     @Override

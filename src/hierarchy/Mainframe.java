@@ -1,5 +1,7 @@
+package hierarchy;
+
 public class Mainframe extends Computer {
-    double mips;
+    private double mips;
 
     @Override
     public int getCost() {

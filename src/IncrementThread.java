@@ -14,10 +14,10 @@ public class IncrementThread  extends Thread{
                 sem.acquire();
                 if (Main.x<10) {
                     Main.x++;
-                    System.out.println("Увеличение, x="+Main.x);
+                    System.out.println("Увеличение, x="+ Main.x);
                 }
                 else
-                    System.out.println("Не увеличиваем, x="+Main.x);
+                    System.out.println("Не увеличиваем, x="+ Main.x);
                 sem.release();
             }
         } catch(InterruptedException e) {

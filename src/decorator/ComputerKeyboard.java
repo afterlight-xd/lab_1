@@ -1,3 +1,7 @@
+package decorator;
+
+import hierarchy.Computer;
+
 public class ComputerKeyboard extends CondimentDecorator {
     Computer computer;
 

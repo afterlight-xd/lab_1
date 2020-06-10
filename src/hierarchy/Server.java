@@ -1,5 +1,7 @@
+package hierarchy;
+
 public class Server extends MicroComputer{
-    int RAM_TB;
+    private int RAM_TB;
 
     @Override
     public int getCost() {

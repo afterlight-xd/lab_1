@@ -1,5 +1,7 @@
+package hierarchy;
+
 public abstract class MicroComputer extends Computer {
-    String CPU;
+    private String CPU;
 
     public MicroComputer() {
 

@@ -1,11 +1,15 @@
+package hierarchy;
+
 public abstract class Computer {
-    int cost=100000;
-    String name="Unknown Computer";
+    private int cost=100000;
+    private String name="Unknown Computer";
 
     public Computer() {
     }
 
     public abstract int getCost();
+
+    public void setCost(int cost){this.cost=cost;}
 
     public String getName() {
         return name;
@@ -15,3 +19,4 @@ public abstract class Computer {
         this.name = name;
     }
 }
+ 

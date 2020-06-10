@@ -1,5 +1,7 @@
+package hierarchy;
+
 public class SuperComputer extends Computer{
-    double tflops;
+    private double tflops;
 
     @Override
     public int getCost() {

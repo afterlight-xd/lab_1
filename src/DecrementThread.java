@@ -14,10 +14,10 @@ public class DecrementThread extends Thread{
                 sem.acquire();
                 if (Main.x>0) {
                     Main.x--;
-                    System.out.println("Уменьшение, x="+Main.x);
+                    System.out.println("Уменьшение, x="+ Main.x);
                 }
                 else
-                    System.out.println("Не уменьшаем, x="+Main.x);
+                    System.out.println("Не уменьшаем, x="+ Main.x);
                 sem.release();
             }
         } catch(InterruptedException e) {

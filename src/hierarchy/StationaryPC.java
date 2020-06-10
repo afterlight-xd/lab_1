@@ -1,13 +1,17 @@
+package hierarchy;
+import factory.*;
+
 public class StationaryPC extends PersonalComputer {
-    String powerSupply;
-    int powerSupplyWatts;
+    private String powerSupply="KAS 2000W";
+    private int powerSupplyWatts=2000;
 
     @Override
     public int getCost() {
         return 70000;
     }
 
-    public StationaryPC() {
+    public StationaryPC(PCfactory factory) {
+        super(factory);
     }
 
     public String getPowerSupply() {
